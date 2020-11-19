@@ -1,0 +1,256 @@
+/* Style relative to index.html */
+
+section {
+    min-height: 100vh;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+
+/* SECTIONS */
+
+section#home_section {
+    background: url("../img/dinofond.jpg");
+    background-size: cover;
+    background-position: center;
+    padding: 10vh 10vw;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+section#home_section>div.slogan {
+    color: white;
+    max-width: 100%;
+    margin: 25vh auto 0 auto;
+}
+
+section#home_section>div.slogan>h1 {
+    font-size: 3em;
+    margin: 0;
+}
+
+section#home_section>div.slogan>p {
+    font-weight: 100;
+    margin: 3%;
+}
+
+section#chrono_section {
+    padding: 10vh 10vw;
+    display: none;
+}
+
+section#chrono_section>p {
+    margin: 3%;
+    font-weight: 300;
+}
+
+section#chrono_section>h2 {
+    text-align: center;
+    font-weight: 200;
+    text-transform: uppercase;
+}
+
+section#chrono_section>h3 {
+    margin: 0 0 3px 0;
+    text-transform: uppercase;
+}
+
+section#chrono_section>h4 {
+    margin: 0;
+    text-transform: uppercase;
+}
+
+section#stakes_section {
+    padding: 10vh 10vw;
+    text-align: center;
+}
+
+#nav_answer{
+    text-decoration : none;
+    color : white;
+}
+#nav_map {
+    text-decoration: none;
+    color: white;
+}
+#nav_stakes {
+    text-decoration: none;
+    color: white;
+}
+#nav_chrono{
+    text-decoration: none;
+    color: white;
+}
+#nav_home{
+    text-decoration: none;
+    color: white;
+}
+
+
+/******************Timeline***************/
+
+* {
+    box-sizing: border-box;
+}
+
+.timeline-object {
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+    position: relative;
+}
+
+.timeline-object.complete::after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 4px;
+    height: 200px;
+    background-color: #1DBF73;
+    left: 23px;
+    top: 50px;
+    transform: translateX(-50%);
+}
+
+.timeline-status {
+    height: 46px;
+    width: 46px;
+    border-radius: 50%;
+    background-color: #1DBF73;
+}
+
+.timeline-object:not(.complete) .timeline-status {
+    background: #ffffff;
+    border: 4px solid #C5C5C5;
+}
+
+.timeline-content {
+    margin-left: 15px;
+}
+
+.timeline-content h3 {
+    color: #1DBF73;
+    background: #CFF6CF;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.timeline-content span {
+    color: #103B27;
+    font-size: .9em;
+    font-weight: bold;
+}
+
+.timeline-object:not(.complete) .timeline-content h3 {
+    color: #8A8A8A;
+    background: #E1E1DF;
+}
+
+/*********************************************/
+
+section#stakes_section>p {
+    margin: 3%;
+    font-weight: 300;
+}
+
+section#stakes_section>h2 {
+    text-align: center;
+    font-weight: 200;
+    text-transform: uppercase;
+}
+
+section#stakes_section>h3 {
+    margin: 0 0 3px 0;
+    text-transform: uppercase;
+}
+
+p {
+    text-align: justify;
+}
+
+section#answer_section {
+    padding: 10vh 10vw;
+}
+
+section#answer_section>p {
+    margin: 3%;
+    font-weight: 300;
+}
+
+section#answer_section>h2 {
+    text-align: center;
+    font-weight: 200;
+    text-transform: uppercase;
+}
+
+section#answer_section>h3 {
+    margin: 0 0 3px 0;
+    text-transform: uppercase;
+}
+
+section#answer_section>h4 {
+    margin: 0;
+    text-transform: uppercase;
+}
+
+section#map_section {
+    padding: 10vh 10vw;
+    text-align: center;
+}
+
+section#map_section>p {
+    margin: 3%;
+    font-weight: 300;
+}
+
+section#map_section>h2 {
+    text-align: center;
+    font-weight: 200;
+    text-transform: uppercase;
+}
+
+section#map_section>h3 {
+    margin: 0 0 3px 0;
+    text-transform: uppercase;
+}
+
+footer>hr {
+    margin: 0 10% 0 10%;
+    border-bottom: black;
+}
+
+#logoEnd>p {
+    text-align: center;
+    font-size: 80%;
+}
+
+footer #footerAEnd {
+    position: relative;
+    display: block;
+    /*margin: auto;*/
+    text-align: center;
+    width: 100%;
+}
+
+#footerAEnd>ul>li {
+    padding: 0 7% 0 7%;
+    font-size: 120%;
+}
+
+#footerAEnd>ul>li>a {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#footerAEnd>ul>li>a:hover {
+    text-decoration: none;
+    color: rgb(66, 66, 66);
+}
+
+footer {
+    /* background: linear-gradient(90deg, white, rgb(243, 243, 243), white);*/
+    padding-top: 0.5%;
+}
