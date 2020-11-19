@@ -88,6 +88,7 @@ section#stakes_section {
 }
 
 
+
 /******************Timeline***************/
 
 * {
@@ -106,7 +107,7 @@ section#stakes_section {
     display: block;
     position: absolute;
     width: 4px;
-    height: 200px;
+    height: 300px;
     background-color: #1DBF73;
     left: 23px;
     top: 50px;
@@ -125,9 +126,7 @@ section#stakes_section {
     border: 4px solid #C5C5C5;
 }
 
-.timeline-content {
-    margin-left: 15px;
-}
+
 
 .timeline-content h3 {
     color: #1DBF73;
@@ -137,7 +136,7 @@ section#stakes_section {
     margin-bottom: 10px;
 }
 
-.timeline-content span {
+.timeline-content div {
     color: #103B27;
     font-size: .9em;
     font-weight: bold;
@@ -146,6 +145,31 @@ section#stakes_section {
 .timeline-object:not(.complete) .timeline-content h3 {
     color: #8A8A8A;
     background: #E1E1DF;
+}
+
+.global {
+    display: flex;
+}
+
+.global>* {
+    margin: 0 10px;
+    flex: 1;
+}
+
+
+.mach {
+    width: 368px;
+    height: 210px;
+    margin-top: 15px;
+}
+
+.flexbox-container > div {
+	width: 50%;
+	padding: 10px;
+}
+
+.flexbox-container > div:first-child {
+	margin-right: 5px;
 }
 
 /*********************************************/
@@ -168,6 +192,7 @@ section#stakes_section>h3 {
 
 p {
     text-align: justify;
+    margin: 15px;
 }
 
 section#answer_section {

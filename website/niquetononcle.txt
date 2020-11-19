@@ -1,0 +1,4 @@
+<span>La première espèce de dinosaure est identifiée et décrite scientifiquement par 
+                    <br> William Buckland : <em>Megalosaurus</em> (littéralement « grand lézard »).  Il décrit une
+                    <br> mâchoire inférieure dans <em>Notice on the  Megalosaurus or great Fossil  Lizard  of
+                    <br> Stonesfield</em> ci-contre.</span>
