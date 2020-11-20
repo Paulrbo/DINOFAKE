@@ -7,6 +7,7 @@ $(function () {
 
          valeur = this.href;
          valeur = valeur.split("#");
+          console.log(valeur);
          if (valeur[1] == "chrono_section") {
              $("#chrono_section").show("fast");
              $("#home_to_chrono").hide("fast");
