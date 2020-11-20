@@ -1,0 +1,149 @@
+#content {
+    font-family: "commmissioner", sans-serif;
+    background-color: #dfe6e9;
+}
+
+nav {
+    background-color: #1DBF73;
+    margin: 0;
+    top: 0;
+}
+
+#content {
+    box-sizing: border-box;
+    display: block;
+    width: 80%;
+    margin: 25px auto;
+    padding: 10px;
+}
+
+#display_content {
+    margin-top: 6%;
+}
+
+#content {
+    display: block;
+    text-align: center;
+}
+
+#display_content>h1 {
+    font-size: 1.4rem;
+    text-align: center;
+}
+
+#content_ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    text-align: center;
+    box-sizing: border-box;
+    width: 80%;
+    border: #1DBF73 solid;
+    margin: 25px auto;
+    border-radius: 4px;
+    padding: 10px;
+}
+
+#content_ul>h4 {
+    text-align: center;
+    font-size: 1.3em;
+}
+
+#chef>p {
+    text-align: center;
+}
+
+#recherche>p {
+    text-align: center;
+}
+
+#code>p {
+    text-align: center;
+}
+
+@media (max-width: 640px) {
+    #content_ul {
+        grid-template-columns: 1fr;
+    }
+    #content {
+        width: 100%;
+        margin: 0;
+        box-shadow: unset;
+        border-radius: 0;
+        height: 100vh;
+    }
+}
+
+.name_content {
+    font-size: 1.2em;
+    font-weight: 600;
+}
+
+.name {
+    font-weight: 200;
+}
+
+#source {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    text-align: center;
+}
+
+#Enjeux {
+    display: grid;
+    grid-template-columns: 1fr;
+    text-align: center;
+}
+
+#Enjeux a {
+    text-decoration: none;
+    color: black;
+}
+
+#Enjeux a:active {
+    text-decoration: underline #1DBF73;
+}
+
+#Enjeux a:hover {
+    color: #1DBF73;
+    text-decoration: underline #1DBF73;
+}
+
+#perspective {
+    display: grid;
+    grid-template-columns: 1fr;
+    text-align: center;
+}
+
+#perspective a {
+    text-decoration: none;
+    color: black;
+}
+
+#perspective a:active {
+    text-decoration: underline #1DBF73;
+}
+
+#perspective a:hover {
+    color: #1DBF73;
+    text-decoration: underline #1DBF73;
+}
+
+#cartographie {
+    display: grid;
+    grid-template-columns: 1fxr;
+    text-align: center;
+}
+
+#cartographie a {
+    text-decoration: none;
+    color: black;
+}
+
+#cartographie a:active {
+    text-decoration: underline #1DBF73;
+}
+
+#cartographie a:hover {
+    color: #1DBF73;
+    text-decoration: underline #1DBF73;
+}
