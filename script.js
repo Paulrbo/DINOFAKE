@@ -6,8 +6,8 @@ $(function () {
      $("#home_to_chrono").click(function() { // quand l'utilisateur clique dans la case
 
          valeur = this.href;
-         valeur = valeur.split("index.html");
-         if (valeur[1] == "#chrono_section") {
+         valeur = valeur.split("#");
+         if (valeur[1] == "chrono_section") {
              $("#chrono_section").show("fast");
              $("#home_to_chrono").hide("fast");
          }
