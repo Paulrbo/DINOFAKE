@@ -1,11 +1,9 @@
 {
   "ExpandedNodes": [
     "",
-    "\\battleia-website-master",
-    "\\battleia-website-master\\assets",
-    "\\battleia-website-master\\assets\\css",
-    "\\battleia-website-master\\assets\\img"
+    "\\assets",
+    "\\assets\\css"
   ],
-  "SelectedNode": "\\battleia-website-master\\script.js",
+  "SelectedNode": "\\script.js",
   "PreviewInSolutionExplorer": false
 }
