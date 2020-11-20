@@ -44,6 +44,7 @@ body {
 #content>p {
     font-weight: 200;
     font-size: 1em;
+    margin: 0;
 }
 
 @media (max-width: 640px) {
