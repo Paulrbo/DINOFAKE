@@ -35,9 +35,12 @@ section#home_section>div.slogan>h1 {
 section#home_section>div.slogan>p {
     font-weight: 200;
     margin: 3%;
+    font-weight: 500;
 }
 
-
+.context{
+    background-color: rgba(255, 255, 255, 0.2);    
+}
 
 section#chrono_section {
     padding: 10vh 10vw;
