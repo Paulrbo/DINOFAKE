@@ -5,40 +5,36 @@ $(function () {
      });*/
      $("#home_to_chrono").click(function() { // quand l'utilisateur clique dans la case
 
-         valeur = this.href;
-         valeur = valeur.split("/");
-          console.log(valeur);
-         if (valeur[2] == "#chrono_section") {
+         valeur = location.hash.substr(1);
+         console.log(valeur);
+         if (valeur == "chrono_section") {
              $("#chrono_section").show("fast");
              $("#home_to_chrono").hide("fast");
          }
      });
      $("#chrono_to_stakes").click(function() { // quand l'utilisateur clique dans la case
 
-         valeur = this.href;
-         valeur = valeur.split("index.html");
-        // console.log(valeur);
-         if (valeur[1] == "#stakes_section") {
+          valeur = location.hash.substr(1);
+         console.log(valeur);
+         if (valeur == "stakes_section") {
              $("#stakes_section").show("fast");
              $("#chrono_to_stakes").hide("fast");
          }
      });
      $("#stakes_to_answer").click(function() { // quand l'utilisateur clique dans la case
 
-         valeur = this.href;
-         valeur = valeur.split("index.html");
-         //console.log(valeur);
-         if (valeur[1] == "#answer_section") {
+          valeur = location.hash.substr(1);
+         console.log(valeur);
+         if (valeur == "answer_section") {
              $("#answer_section").show("fast");
              $("#stakes_to_answer").hide("fast");
          }
      });
      $("#answer_to_map").click(function() { // quand l'utilisateur clique dans la case
 
-         valeur = this.href;
-         valeur = valeur.split("index.html");
-         //console.log(valeur);
-         if (valeur[1] == "#map_section") {
+         valeur = location.hash.substr(1);
+         console.log(valeur);
+         if (valeur == "map_section") {
              $("#map_section").show("fast");
              $("#answer_to_map").hide("fast");
          }
