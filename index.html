@@ -1,271 +1,449 @@
 ﻿<!DOCTYPE html>
 <html lang="fr">
-
-<head>
+  <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-     <title>DinoFake</title>
+    <title>DinoFake</title>
 
-    <link rel="icon" type="image/jpg" href="assets/img/logodinof.png">
+    <link rel="icon" type="image/jpg" href="assets/img/logodinof.png" />
 
-    <link href="https://fonts.googleapis.com/css2?family=Commissioner:wght@100;300;500;700;900&display=swap"
-          rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Commissioner:wght@100;300;500;700;900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="node_modules/normalize.css/normalize.css" />
     <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
     <link rel="stylesheet" type="text/css" href="assets/css/home.css" />
     <link rel="stylesheet" type="text/css" href="assets/css/scroll.css" />
-    <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-3.5.1.min.js"
+    ></script>
     <script type="text/javascript" src="script.js"></script>
-</head>
+  </head>
 
-<body>
+  <body>
+    <div
+      id="dinobg"
+      style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; pointer-events: none;"
+    ></div>
+
     <!--DinoMenu-->
     <nav id="my_nav">
-        <ul>
-          <li class="brand-nav"> <a href="#"> <img src = "assets/img/DINOLOGO.png" width="149" height="39" /> </a> </li>
-        </ul>
-        <ul class="navigation">
-            <li><a id="nav_home" href = "#home_section" onclick="home_section()">Home</a></li>
-            <li class="nav">|</li>
-            <li><a id="nav_chrono" href = "#chrono_section" onclick="home_to_chrono()">Chronologie</a></li>
-            <li class="nav">|</li>
-            <li> <a id="nav_stakes"href = "#stakes_section"onclick="chrono_to_stakes()"> Enjeux </a></li>
-            <li class="nav">|</li>
-            <li><a id="nav_answer" href ="#answer_section" onclick="stakes_to_answer()">Perspectives de résolution</a></li>
-            <li class="nav">|</li>
-            <li><a id="nav_map" href="#map_section" onclick="answer_to_map()">Cartographie</a></li>
-        </ul>
+      <ul>
+        <li class="brand-nav">
+          <a href="#">
+            <img src="assets/img/DINOLOGO.png" width="149" height="39" />
+          </a>
+        </li>
+      </ul>
+      <ul class="navigation">
+        <li>
+          <a id="nav_home" href="#home_section" onclick="home_section()"
+            >Home</a
+          >
+        </li>
+        <li class="nav">|</li>
+        <li>
+          <a id="nav_chrono" href="#chrono_section" onclick="home_to_chrono()"
+            >Chronologie</a
+          >
+        </li>
+        <li class="nav">|</li>
+        <li>
+          <a
+            id="nav_stakes"
+            href="#stakes_section"
+            onclick="chrono_to_stakes()"
+          >
+            Enjeux
+          </a>
+        </li>
+        <li class="nav">|</li>
+        <li>
+          <a id="nav_answer" href="#answer_section" onclick="stakes_to_answer()"
+            >Perspectives de résolution</a
+          >
+        </li>
+        <li class="nav">|</li>
+        <li>
+          <a id="nav_map" href="#map_section" onclick="answer_to_map()"
+            >Cartographie</a
+          >
+        </li>
+      </ul>
     </nav>
     <section id="home_section">
-        <div class="slogan">
-            <h1>Les dinosaures : vérité scientifique ou légende ?</h1>
-            <div class="context">
-            <p>
-              De nombreux fossiles sont découverts depuis plusieurs milliers d’années par l’Homme et pendant longtemps des légendes de monstres bibliques et autres dragons les entouraient. C’est seulement en 1842 que le mot « dinosaure » est utilisé pour la première fois, leur donnant une place sur le gigantesque arbre généalogique des espèces : l’arbre phylogénétique.
-              <br>Il est important avant de rentrer dans la controverse de se mettre d’accord sur ce que l’on entend par « dinosaure ». Non Timmy, les crocodiles (et plus précisément les crocodiliens) ne sont pas des dinosaures. En revanche Timmy, les oiseaux sont des dinosaures. On considère en effet que le dernier ancêtre commun de ces trois familles était un archosaure qui aurait vécu il y a un peu plus de 240 millions d’années selon une étude publiée dans la revue Science. Elles se sont ensuite développées plus ou moins indépendamment.
-              <br>Ainsi, lorsque vous verrez le mot « dinosaure » dans les textes de ce site, il fait référence aux dinosaures non-aviens, c’est-à-dire tous les dinosaures qui ne sont pas des oiseaux et dont les derniers représentants se sont éteints il y a quelques 66 millions d’années.
-              <br>Même si la théorie selon laquelle les dinosaures ont existé est communément admise dans la communauté scientifique aujourd’hui, un certain nombre de détracteurs se manifestent encore. Scientifiques, croyants ou simples citoyens invoquent un grand nombre d’arguments de l’incompatibilité biomécanique au scepticisme de l’évolution en passant par la théorie du complot pour fragiliser cette théorie.
-            </div>
+      <div class="slogan">
+        <h1>Les dinosaures : vérité scientifique ou légende ?</h1>
+        <div class="context">
+          <p>
+            De nombreux fossiles sont découverts depuis plusieurs milliers
+            d’années par l’Homme et pendant longtemps des légendes de monstres
+            bibliques et autres dragons les entouraient. C’est seulement en 1842
+            que le mot « dinosaure » est utilisé pour la première fois, leur
+            donnant une place sur le gigantesque arbre généalogique des espèces
+            : l’arbre phylogénétique.
+            <br />Il est important avant de rentrer dans la controverse de se
+            mettre d’accord sur ce que l’on entend par « dinosaure ». Non Timmy,
+            les crocodiles (et plus précisément les crocodiliens) ne sont pas
+            des dinosaures. En revanche Timmy, les oiseaux sont des dinosaures.
+            On considère en effet que le dernier ancêtre commun de ces trois
+            familles était un archosaure qui aurait vécu il y a un peu plus de
+            240 millions d’années selon une étude publiée dans la revue Science.
+            Elles se sont ensuite développées plus ou moins indépendamment.
+            <br />Ainsi, lorsque vous verrez le mot « dinosaure » dans les
+            textes de ce site, il fait référence aux dinosaures non-aviens,
+            c’est-à-dire tous les dinosaures qui ne sont pas des oiseaux et dont
+            les derniers représentants se sont éteints il y a quelques 66
+            millions d’années. <br />Même si la théorie selon laquelle les
+            dinosaures ont existé est communément admise dans la communauté
+            scientifique aujourd’hui, un certain nombre de détracteurs se
+            manifestent encore. Scientifiques, croyants ou simples citoyens
+            invoquent un grand nombre d’arguments de l’incompatibilité
+            biomécanique au scepticisme de l’évolution en passant par la théorie
+            du complot pour fragiliser cette théorie.
+          </p>
         </div>
-        <a href="#chrono_section" id="home_to_chrono" onclick="home_to_chrono()"><span></span></a>
-         <p id="defilement"style="text-align: center; margin : 0; padding: 1%; color: white; display : none;position: absolute; left : 46.5%">
+      </div>
+      <a href="#chrono_section" id="home_to_chrono" onclick="home_to_chrono()"
+        ><span></span
+      ></a>
+      <p
+        id="defilement"
+        style="
+          text-align: center;
+          margin: 0;
+          padding: 1%;
+          color: white;
+          display: none;
+          position: absolute;
+          left: 46.5%;
+        "
+      >
         Défilement
-        </p>
-            </p>
+      </p>
     </section>
-
 
     <section id="chrono_section">
-        <h2>Chronologie</h2>
-        <h4>Depuis des milliers d’années, des fossiles de dinosaures sont découverts dans le monde mais ils n’étaient alors pas identifiés comme tels. En Chine, ils sont considérés comme des os de dragons et sont couramment utilisés dans la médecine traditionnelle et en Europe, ils sont généralement reconnus comme les restes de créatures bibliques. Pourtant, c’est bien plus tard, au XIXème siècle que les premiers travaux officiels sont réalisés sur ces créatures. La frise suivante développe l’histoire des dinosaures d’un point de vue scientifique et d’un point de vue paléoartistique.</h4>
-        <p>
-          
-          <div class="global">
+      <h2>Chronologie</h2>
+      <h4>
+        Depuis des milliers d’années, des fossiles de dinosaures sont découverts
+        dans le monde mais ils n’étaient alors pas identifiés comme tels. En
+        Chine, ils sont considérés comme des os de dragons et sont couramment
+        utilisés dans la médecine traditionnelle et en Europe, ils sont
+        généralement reconnus comme les restes de créatures bibliques. Pourtant,
+        c’est bien plus tard, au XIXème siècle que les premiers travaux
+        officiels sont réalisés sur ces créatures. La frise suivante développe
+        l’histoire des dinosaures d’un point de vue scientifique et d’un point
+        de vue paléoartistique.
+      </h4>
+      <p></p>
 
+      <div class="global">
+        <div class="pic">
+          <img
+            src="timeline/Buckland,_Megalosaurus_jaw.jpg"
+            alt="machoire"
+            class="img1"
+          />
+          <img
+            src="timeline/John_Martin_-_The_country_of_the_Iguanodon_-_Google_Art_Project.jpg"
+            alt="machoire"
+            class="img2"
+          />
+          <img
+            src="timeline/Iguanodon_Crystal_Palace.jpg"
+            alt="machoire"
+            class="img3"
+          />
+          <img src="timeline/Laelaps-cope.jpg" alt="machoire" class="img4" />
+          <img
+            src="timeline/Laelaps-Charles_Knight-1897.jpg"
+            alt="machoire"
+            class="img5"
+          />
+          <img src="timeline/Stego.jpg" alt="machoire" class="img6" />
+          <img
+            src="timeline/Coelophysis Group - Douglas Henderson.jpg"
+            alt="machoire"
+            class="img7"
+          />
+          <img
+            src="timeline/Deinocheirus_large.jpg"
+            alt="machoire"
+            class="img8"
+          />
+          <img
+            src="timeline/Jurassic_World_Logo.png"
+            alt="machoire"
+            class="img9"
+          />
+        </div>
 
+        <div class="mid"></div>
 
-            <div class="pic">
-              <img src="timeline/Buckland,_Megalosaurus_jaw.jpg" alt="machoire" class="img1">
-              <img src="timeline/John_Martin_-_The_country_of_the_Iguanodon_-_Google_Art_Project.jpg" alt="machoire" class="img2">
-              <img src="timeline/Iguanodon_Crystal_Palace.jpg" alt="machoire" class="img3">
-              <img src="timeline/Laelaps-cope.jpg" alt="machoire" class="img4">
-              <img src="timeline/Laelaps-Charles_Knight-1897.jpg" alt="machoire" class="img5">
-              <img src="timeline/Stego.jpg" alt="machoire" class="img6">
-              <img src="timeline/Coelophysis Group - Douglas Henderson.jpg" alt="machoire" class="img7">
-              <img src="timeline/Deinocheirus_large.jpg" alt="machoire" class="img8">
-              <img src="timeline/Jurassic_World_Logo.png" alt="machoire" class="img9">
+        <div class="tout">
+          <div class="timeline">
+            <div class="timeline-object complete">
+              <div class="timeline-status"></div>
+              <div class="timeline-content">
+                <h3>1824</h3>
+                <span
+                  >La première espèce de dinosaure est identifiée et décrite
+                  <br />scientifiquement par William Buckland :
+                  <em>Megalosaurus</em> <br />(littéralement « grand lézard »).
+                  Il décrit une mâchoire <br />inférieure dans
+                  <em
+                    >Notice on the Megalosaurus or great <br />Fossil Lizard of
+                    Stonesfield</em
+                  >
+                  ci-contre.</span
+                >
+              </div>
             </div>
 
-            <div class="mid"></div>
-
-
-
-            <div class="tout">
-              <div class="timeline">
-              <div class="timeline-object complete">
-                <div class="timeline-status"></div>
-                <div class="timeline-content">
-                  <h3>1824</h3>
-                  <span>La première espèce de dinosaure est identifiée et décrite 
-                    <br>scientifiquement par William Buckland : <em>Megalosaurus</em> 
-                    <br>(littéralement « grand lézard »). Il décrit une mâchoire 
-                    <br>inférieure dans <em>Notice on the Megalosaurus or great 
-                      <br>Fossil Lizard of Stonesfield</em> ci-contre.</span>
-                </div>
+            <div class="timeline-object complete">
+              <div class="timeline-status"></div>
+              <div class="timeline-content">
+                <h3>1837</h3>
+                <span
+                  >Le peintre John Martin représente la première toile
+                  (aquarelle) <br />de dinosaures :
+                  <em>The Country of the Iguanodon</em>. Cette
+                  <br />représentation de l’Iguanodon tel Gideon Mantell le
+                  décrit <br />comme les lézards modernes mais démesurés est
+                  conservée <br />jusqu’aux années 1840.</span
+                >
               </div>
-              
-              <div class="timeline-object complete">
-                <div class="timeline-status"></div>
-                <div class="timeline-content">
-                  <h3>1837</h3>
-                  <span>Le peintre John Martin représente la première toile (aquarelle) 
-                    <br>de dinosaures : <em>The Country of the Iguanodon</em>. Cette 
-                    <br>représentation de l’Iguanodon tel Gideon Mantell le décrit 
-                    <br>comme les lézards modernes mais démesurés est conservée 
-                    <br>jusqu’aux années 1840.</span>
-                </div>
-              </div>
-
-              <div class="timeline-object complete">
-                <div class="timeline-status"></div>
-                <div class="timeline-content">
-                  <h3>1842</h3>
-                  <span>Le mot « dinosaure » apparaît pour la première fois. 
-                    <br>Sir Richard Owen utilise en effet le mot « Dinosauria » 
-                    <br>(du grec « terrible lézard ») pour parler du super-ordre 
-                    <br>auxquelles ces créatures appartiennent. Il remet également 
-                    <br>en question la vision des dinosaures telle qu’elle est à ce 
-                    <br>moment-là. Plus tard en 1854, les sculptures grandeur natures 
-                    <br>de Benjamin Waterhouse Hawkins viennent proposer un autre 
-                    <br>modèle pour les dinosaures selon les idées d’Owen (ci-contre 
-                    <br>des iguanodons).</span>
-                </div>
-              </div>
-
-              <div class="timeline-object complete">
-                <div class="timeline-status"></div>
-                <div class="timeline-content">
-                  <h3>A partir des années 1850</h3>
-                  <span>les recherches des naturalistes particulièrement aux Etats-Unis 
-                    <br>permettent de mettre à jour la perception des dinosaures. De 
-                    <br>nombreux fossiles mettent en évidence le caractère bipède d’un 
-                    <br>grand nombre d’espèces dont <em>Iguanodon</em> et les représentations 
-                    <br>changent en adéquation avec ces découvertes. En 1869, Edward 
-                    <br>Drinker Cope propose ainsi une illustration de Dryptosaurus 
-                    <br>(alors appelé <em>Laelaps</em>) et semblable à un kangourou dans <em>The 
-                      <br>Fossil Reptiles of New Jersey</em>.</span>
-                </div>
-              </div>
-
-              <div class="timeline-object complete">
-                <div class="timeline-status"></div>
-                <div class="timeline-content">
-                  <h3>1897</h3>
-                  <span>Ces développements apportent un regard différent sur les  
-                    <br>dinosaures. De plus en plus d’espèces sont découvertes et  
-                    <br>leur diversité apparait. L’image de lézards lourdauds et passifs  
-                    <br>s’éloigne au profit de créatures agiles et dynamiques, ressemblant 
-                    <br>de plus en plus aux oiseaux ou aux mammifères actuels comme 
-                    <br>ci-contre dans <em>Laelaps</em> de Charles R. Knight en 1897.</span>
-                </div>
-              </div>
-
-              <div class="timeline-object complete">
-                <div class="timeline-status"></div>
-                <div class="timeline-content">
-                  <h3>Au début du XXème siècle</h3>
-                  <span>un raisonnement est avancé parmi la communauté de paléontologues : 
-                    <br>si les dinosaures se sont éteints c’est qu’ils devaient être bêtes et 
-                    <br>probablement inférieurs aux espèces actuelles. Ils seraient en soit 
-                    <br>des échecs de l’évolution. Charles R. Knight représente <em>Stegosaurus 
-                      <br>Ungulatus</em> ci-contre, en 1901.</span>
-                </div>
-              </div>
-
-              <div class="timeline-object complete">
-                <div class="timeline-status"></div>
-                <div class="timeline-content">
-                  <h3>1969</h3>
-                  <span>Sous l’impulsion du travail de John Ostrom sur Deinonychus à la fin des 
-                    <br>années 1960, un mouvement appelé la « renaissance des dinosaures » 
-                    <br>apparaît. C’est la réouverture de débats sur les connaissances et les 
-                    <br>représentations les plus répandues avec par exemple l’apparition de 
-                    <br>l’idée que les dinosaures aient pu avoir le sang chaud ce qui en ferait 
-                    <br>des animaux bien plus actifs. Ci-contre <em>Coelophysis</em> Group de Douglas 
-                    <br>Henderson.</span>
-                </div>
-              </div>
-
-              <div class="timeline-object complete">
-                <div class="timeline-status"></div>
-                <div class="timeline-content">
-                  <h3>A partir des années 1990</h3>
-                  <span>des représentations expérimentatrices apparaissent de plus en plus. 
-                    <br>D’un côté les scientifiques font de nombreuses découvertes de fossiles 
-                    <br>à plumes ou à duvet et poussent des recherches biomécaniques très 
-                    <br>avancées et d’un autre côté les paléoartistes spéculent et imaginent ce 
-                    <br>que l’on ne sait pas encore comme dans <em>Deinocheirus</em> de Gabriel Ugueto 
-                    <br>ci-contre. En 1993 sort également le film <em>Jurassic Park</em> de Steven Spielberg 
-                    <br>qui démocratise largement les dinosaures.</span>
-                </div>
-              </div>
-              
-              <div class="timeline-object">
-                <div class="timeline-status"></div>
-                <div class="timeline-content">
-                  <h3>2015</h3>
-                  <span><em>Jurassic World</em>, la suite de <em>Jurassic Park</em>, sort. Plus que d’être une simple 
-                    <br>suite, c’est à partir de ce moment qu’explosent sur Internet les mentions 
-                    <br>de la théorie selon laquelle les dinosaures n’auraient jamais existé d’après 
-                    <br>le leader de social listening Brandwatch. Principal élément mis en cause : 
-                    <br>la technologie d’image de synthèse utilisée dans le film a amené certains 
-                    <br>spectateurs à douter de la véracité des dinosaures.</span>
-                </div>
-                
-              </div>              
-                
             </div>
+
+            <div class="timeline-object complete">
+              <div class="timeline-status"></div>
+              <div class="timeline-content">
+                <h3>1842</h3>
+                <span
+                  >Le mot « dinosaure » apparaît pour la première fois.
+                  <br />Sir Richard Owen utilise en effet le mot « Dinosauria »
+                  <br />(du grec « terrible lézard ») pour parler du super-ordre
+                  <br />auxquelles ces créatures appartiennent. Il remet
+                  également <br />en question la vision des dinosaures telle
+                  qu’elle est à ce <br />moment-là. Plus tard en 1854, les
+                  sculptures grandeur natures <br />de Benjamin Waterhouse
+                  Hawkins viennent proposer un autre <br />modèle pour les
+                  dinosaures selon les idées d’Owen (ci-contre <br />des
+                  iguanodons).</span
+                >
+              </div>
             </div>
+
+            <div class="timeline-object complete">
+              <div class="timeline-status"></div>
+              <div class="timeline-content">
+                <h3>A partir des années 1850</h3>
+                <span
+                  >les recherches des naturalistes particulièrement aux
+                  Etats-Unis <br />permettent de mettre à jour la perception des
+                  dinosaures. De <br />nombreux fossiles mettent en évidence le
+                  caractère bipède d’un <br />grand nombre d’espèces dont
+                  <em>Iguanodon</em> et les représentations <br />changent en
+                  adéquation avec ces découvertes. En 1869, Edward <br />Drinker
+                  Cope propose ainsi une illustration de Dryptosaurus
+                  <br />(alors appelé <em>Laelaps</em>) et semblable à un
+                  kangourou dans
+                  <em>The <br />Fossil Reptiles of New Jersey</em>.</span
+                >
+              </div>
             </div>
-        </p>
-        
-        <a href="#stakes_section" id="chrono_to_stakes" onclick="chrono_to_stakes()"><span></span></a>
 
+            <div class="timeline-object complete">
+              <div class="timeline-status"></div>
+              <div class="timeline-content">
+                <h3>1897</h3>
+                <span
+                  >Ces développements apportent un regard différent sur les
+                  <br />dinosaures. De plus en plus d’espèces sont découvertes
+                  et <br />leur diversité apparait. L’image de lézards lourdauds
+                  et passifs <br />s’éloigne au profit de créatures agiles et
+                  dynamiques, ressemblant <br />de plus en plus aux oiseaux ou
+                  aux mammifères actuels comme <br />ci-contre dans
+                  <em>Laelaps</em> de Charles R. Knight en 1897.</span
+                >
+              </div>
+            </div>
 
+            <div class="timeline-object complete">
+              <div class="timeline-status"></div>
+              <div class="timeline-content">
+                <h3>Au début du XXème siècle</h3>
+                <span
+                  >un raisonnement est avancé parmi la communauté de
+                  paléontologues : <br />si les dinosaures se sont éteints c’est
+                  qu’ils devaient être bêtes et <br />probablement inférieurs
+                  aux espèces actuelles. Ils seraient en soit <br />des échecs
+                  de l’évolution. Charles R. Knight représente
+                  <em>Stegosaurus <br />Ungulatus</em> ci-contre, en 1901.</span
+                >
+              </div>
+            </div>
 
+            <div class="timeline-object complete">
+              <div class="timeline-status"></div>
+              <div class="timeline-content">
+                <h3>1969</h3>
+                <span
+                  >Sous l’impulsion du travail de John Ostrom sur Deinonychus à
+                  la fin des <br />années 1960, un mouvement appelé la «
+                  renaissance des dinosaures » <br />apparaît. C’est la
+                  réouverture de débats sur les connaissances et les
+                  <br />représentations les plus répandues avec par exemple
+                  l’apparition de <br />l’idée que les dinosaures aient pu avoir
+                  le sang chaud ce qui en ferait <br />des animaux bien plus
+                  actifs. Ci-contre <em>Coelophysis</em> Group de Douglas
+                  <br />Henderson.</span
+                >
+              </div>
+            </div>
 
+            <div class="timeline-object complete">
+              <div class="timeline-status"></div>
+              <div class="timeline-content">
+                <h3>A partir des années 1990</h3>
+                <span
+                  >des représentations expérimentatrices apparaissent de plus en
+                  plus. <br />D’un côté les scientifiques font de nombreuses
+                  découvertes de fossiles <br />à plumes ou à duvet et poussent
+                  des recherches biomécaniques très <br />avancées et d’un autre
+                  côté les paléoartistes spéculent et imaginent ce <br />que
+                  l’on ne sait pas encore comme dans <em>Deinocheirus</em> de
+                  Gabriel Ugueto <br />ci-contre. En 1993 sort également le film
+                  <em>Jurassic Park</em> de Steven Spielberg <br />qui
+                  démocratise largement les dinosaures.</span
+                >
+              </div>
+            </div>
 
-
+            <div class="timeline-object">
+              <div class="timeline-status"></div>
+              <div class="timeline-content">
+                <h3>2015</h3>
+                <span
+                  ><em>Jurassic World</em>, la suite de <em>Jurassic Park</em>,
+                  sort. Plus que d’être une simple <br />suite, c’est à partir
+                  de ce moment qu’explosent sur Internet les mentions <br />de
+                  la théorie selon laquelle les dinosaures n’auraient jamais
+                  existé d’après <br />le leader de social listening Brandwatch.
+                  Principal élément mis en cause : <br />la technologie d’image
+                  de synthèse utilisée dans le film a amené certains
+                  <br />spectateurs à douter de la véracité des
+                  dinosaures.</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a
+        href="#stakes_section"
+        id="chrono_to_stakes"
+        onclick="chrono_to_stakes()"
+        ><span></span
+      ></a>
     </section>
     <section id="stakes_section">
-        <h2>Enjeux</h2>
-        <p>
-          <img src="assets/img/content_dinosaurs_australianmusem.jpg" alt="soc" class="society">
-          L’existence des dinosaures est depuis leurs découvertes un grand débat. En effet, il implique des enjeux de différentes catégories. Mais ce débat n’implique pas seulement les spécialistes du sujet, il englobe toutes les classes de population quelque soit leur profession.
-          Ce sujet impacte l’éducation, avec l’intervention de parents et de professeurs demandant la suppression des dinosaures du programme scolaire. Il n’est pas possible de connaître les valeurs familiales de ces reptiles de même, de nos jours aucun être vivant n’en a vu.
-          <br>La valeur d’os de dinosaure peut excéder les 12 millions de dollars, c’est lors de ventes aux enchères que l’on peut voir l’impact économique de ce dernier. En plus de ces ventes, les produits dérivés et les adaptations cinématographiques sont eux aussi des principaux acteurs de l’économie des dinosaures.
-          <br>La théorie de l’évolution, qui implique l’existence des dinosaures, n’est pas testable. Mais scientifiquement pour prouver un fait il faut le tester. Cette théorie ne peut donc pas être considérée comme un fait ou une loi scientifique. Certaines théories expliquent que les dinosaures seraient comme les dragons, des mythes tous droits sortis de l’imaginaire. Une théorie qui ne peut pas plus être testé que la première citée.
-          <br>Parmi tous ces enjeux, le plus important, qui regroupe le plus grand nombre d’opinions, concerne la religion. Les textes de nature religieuse ne font jamais référence à l’existence de ces reptiles. Ces animaux s’opposent donc à la création de la Terre par Dieu. Il faudrait donc choisir entre réfuter l’existence de Dieu ou non.
-            
-        </p>
-       <a href="#answer_section" id="stakes_to_answer" onclick="stakes_to_answer()"><span></span></a>
+      <h2>Enjeux</h2>
+      <p>
+        <img
+          src="assets/img/content_dinosaurs_australianmusem.jpg"
+          alt="soc"
+          class="society"
+        />
+        L’existence des dinosaures est depuis leurs découvertes un grand débat.
+        En effet, il implique des enjeux de différentes catégories. Mais ce
+        débat n’implique pas seulement les spécialistes du sujet, il englobe
+        toutes les classes de population quelque soit leur profession. Ce sujet
+        impacte l’éducation, avec l’intervention de parents et de professeurs
+        demandant la suppression des dinosaures du programme scolaire. Il n’est
+        pas possible de connaître les valeurs familiales de ces reptiles de
+        même, de nos jours aucun être vivant n’en a vu.
+        <br />La valeur d’os de dinosaure peut excéder les 12 millions de
+        dollars, c’est lors de ventes aux enchères que l’on peut voir l’impact
+        économique de ce dernier. En plus de ces ventes, les produits dérivés et
+        les adaptations cinématographiques sont eux aussi des principaux acteurs
+        de l’économie des dinosaures. <br />La théorie de l’évolution, qui
+        implique l’existence des dinosaures, n’est pas testable. Mais
+        scientifiquement pour prouver un fait il faut le tester. Cette théorie
+        ne peut donc pas être considérée comme un fait ou une loi scientifique.
+        Certaines théories expliquent que les dinosaures seraient comme les
+        dragons, des mythes tous droits sortis de l’imaginaire. Une théorie qui
+        ne peut pas plus être testé que la première citée. <br />Parmi tous ces
+        enjeux, le plus important, qui regroupe le plus grand nombre d’opinions,
+        concerne la religion. Les textes de nature religieuse ne font jamais
+        référence à l’existence de ces reptiles. Ces animaux s’opposent donc à
+        la création de la Terre par Dieu. Il faudrait donc choisir entre réfuter
+        l’existence de Dieu ou non.
+      </p>
+      <a
+        href="#answer_section"
+        id="stakes_to_answer"
+        onclick="stakes_to_answer()"
+        ><span></span
+      ></a>
     </section>
     <section id="answer_section">
-        <h2>Perspectives de résolution</h2>
-        <p>
-          <img src="assets/img/toy-dinosaur.jpg" alt="soc" class="society">
-          Le débat qui subsiste à savoir si les dinosaures existent ou non n’est pas nouveau. Certes il a été ravivé suite à la sortie du film Jurassic World, mais il y a énormément de théories du complot qui ont émergé ; certaines sont intrigantes et suscitent des questions, d’autres sont à prendre avec davantage de recul. 
-          Il est facile de les retrouver en parcourant les réseaux sociaux, ainsi nous pouvons voir l’impact de ces théories, également qui elles touchent, quels en sont les principaux sujets ainsi que leurs auteurs. Ces personnes sont passionnés et inébranlables dans leurs croyances. 
-          Le fondement de ce débat est finalement bien plus conséquent qu’il n’y laisse paraître, et représente en quelque sorte l’opposition qu’il y a entre la science et l’Eglise étant donné qu’il met en cause le créationnisme pour aborder la théorie de l’évolution. Ainsi nous pouvons nous demander si la science n’est pas elle-même une forme de croyance ? C’est alors que nous ne pouvons que vous laisser vous faire votre propre opinion sur ce débat.           
-        </p>
-        <a href="#map_section" id="answer_to_map" onclick="answer_to_map()"><span></span></a>
+      <h2>Perspectives de résolution</h2>
+      <p>
+        <img src="assets/img/toy-dinosaur.jpg" alt="soc" class="society" />
+        Le débat qui subsiste à savoir si les dinosaures existent ou non n’est
+        pas nouveau. Certes il a été ravivé suite à la sortie du film Jurassic
+        World, mais il y a énormément de théories du complot qui ont émergé ;
+        certaines sont intrigantes et suscitent des questions, d’autres sont à
+        prendre avec davantage de recul. Il est facile de les retrouver en
+        parcourant les réseaux sociaux, ainsi nous pouvons voir l’impact de ces
+        théories, également qui elles touchent, quels en sont les principaux
+        sujets ainsi que leurs auteurs. Ces personnes sont passionnés et
+        inébranlables dans leurs croyances. Le fondement de ce débat est
+        finalement bien plus conséquent qu’il n’y laisse paraître, et représente
+        en quelque sorte l’opposition qu’il y a entre la science et l’Eglise
+        étant donné qu’il met en cause le créationnisme pour aborder la théorie
+        de l’évolution. Ainsi nous pouvons nous demander si la science n’est pas
+        elle-même une forme de croyance ? C’est alors que nous ne pouvons que
+        vous laisser vous faire votre propre opinion sur ce débat.
+      </p>
+      <a href="#map_section" id="answer_to_map" onclick="answer_to_map()"
+        ><span></span
+      ></a>
     </section>
 
-
     <section id="map_section">
-        <h2>Cartographie</h2>
-        <img src="assets/img/Cartographie.png" alt="machoire" class="carto">
-        <a href="#home_section" id="map_to_home" onclick="map_to_home()"><span></span></a>
-        <p id="haut" style="text-align: center; margin : 0; padding: 0; display : none">
+      <h2>Cartographie</h2>
+      <img src="assets/img/Cartographie.png" alt="machoire" class="carto" />
+      <a href="#home_section" id="map_to_home" onclick="map_to_home()"
+        ><span></span
+      ></a>
+      <p
+        id="haut"
+        style="text-align: center; margin: 0; padding: 0; display: none"
+      >
         Haut de page
-        </p>
+      </p>
     </section>
 
     <footer>
-        <nav id="footerAEnd">
-            <ul>
-                <li><a href="cu.html">Condition d'utilisation</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="apropos.html">à propos</a></li>
-            </ul>
-        </nav>
+      <nav id="footerAEnd">
+        <ul>
+          <li><a href="cu.html">Condition d'utilisation</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="apropos.html">à propos</a></li>
+        </ul>
+      </nav>
 
-        <div id="logoEnd">
-            <p>site design / logo © 2020 ADINOZONE</p>
-        </div>
-        <hr />
+      <div id="logoEnd">
+        <p>site design / logo © 2020 ADINOZONE</p>
+      </div>
+      <hr />
     </footer>
-</body>
-
+    <script src="assets/js/dino.js"></script>
+  </body>
 </html>

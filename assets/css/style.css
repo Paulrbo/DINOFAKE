@@ -22,6 +22,7 @@ body {
     background-color: #dfe6e9;
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
 }
 
 body {
@@ -61,7 +62,6 @@ ul.navigation {
 }
 
 li.brand-nav{
-   
     font-weight: 700;
     text-transform: uppercase;
 }
