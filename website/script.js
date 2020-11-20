@@ -1,8 +1,8 @@
 $(function () {
-     $('.scroll-down').click(function() {
+     /*$('.scroll-down').click(function() {
          $('html, body').animate({ scrollTop: $('section.ok').offset().top }, 'slow');
          return false;
-     });
+     });*/
      $("#home_to_chrono").click(function() { // quand l'utilisateur clique dans la case
 
          valeur = this.href;
