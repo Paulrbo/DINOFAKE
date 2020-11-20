@@ -26,15 +26,15 @@
           <li class="brand-nav"> <a href="#"> <img src = "assets/img/DINOLOGO.png" width="149" height="39" /> </a> </li>
         </ul>
         <ul class="navigation">
-            <li><a id="nav_home" href = "#home_section">Home</a></li>
+            <li><a id="nav_home" href = "#home_section" onclick="home_section()">Home</a></li>
             <li class="nav">|</li>
-            <li><a id="nav_chrono" href = "#chrono_section">Chronologie</a></li>
+            <li><a id="nav_chrono" href = "#chrono_section" onclick="home_to_chrono()">Chronologie</a></li>
             <li class="nav">|</li>
-            <li><a id="nav_map" href="#map_section">Cartographie</a></li>
+            <li><a id="nav_map" href="#map_section" onclick="answer_to_map()">Cartographie</a></li>
             <li class="nav">|</li>
-            <li> <a id="nav_stakes"href = "#stakes_section"> Enjeux </a></li>
+            <li> <a id="nav_stakes"href = "#stakes_section"onclick="chrono_to_stakes()"> Enjeux </a></li>
             <li class="nav">|</li>
-            <li><a id="nav_answer" href ="#answer_section">Perspective de résolution</a></li>
+            <li><a id="nav_answer" href ="#answer_section" onclick="stakes_to_answer()">Perspective de résolution</a></li>
         </ul>
     </nav>
     <section id="home_section">
@@ -48,7 +48,7 @@
               <br>Même si la théorie selon laquelle les dinosaures ont existé est communément admise dans la communauté scientifique aujourd’hui, un certain nombre de détracteurs se manifestent encore. Scientifiques, croyants ou simples citoyens invoquent un grand nombre d’arguments de l’incompatibilité biomécanique au scepticisme de l’évolution en passant par la théorie du complot pour fragiliser cette théorie.
             </div>
         </div>
-        <a href="#chrono_section" id="home_to_chrono"><span></span></a>
+        <a href="#chrono_section" id="home_to_chrono" onclick="home_to_chrono()"><span></span></a>
          <p id="defilement"style="text-align: center; margin : 0; padding: 1%; color: white; display : none;position: absolute; left : 46.5%">
         Défilement
         </p>
@@ -210,7 +210,7 @@
             </div>
         </p>
         
-        <a href="#stakes_section" id="chrono_to_stakes"><span></span></a>
+        <a href="#stakes_section" id="chrono_to_stakes" onclick="chrono_to_stakes()"><span></span></a>
 
 
 
@@ -228,7 +228,7 @@
           <br>Parmi tous ces enjeux, le plus important, qui regroupe le plus grand nombre d’opinions, concerne la religion. Les textes de nature religieuse ne font jamais référence à l’existence de ces reptiles. Ces animaux s’opposent donc à la création de la Terre par Dieu. Il faudrait donc choisir entre réfuter l’existence de Dieu ou non.
             
         </p>
-       <a href="#answer_section" id="stakes_to_answer"><span></span></a>
+       <a href="#answer_section" id="stakes_to_answer" onclick="stakes_to_answer()"><span></span></a>
     </section>
     <section id="answer_section">
         <h2>Perspective de résolution</h2>
@@ -246,7 +246,7 @@
             ante id posuere lobortis, sapien neque vulputate orci, ac gravida ipsum velit at eros. Praesent eu gravida elit.
            
         </p>
-        <a href="#map_section" id="answer_to_map"><span></span></a>
+        <a href="#map_section" id="answer_to_map" onclick="answer_to_map()"><span></span></a>
     </section>
 
 
@@ -260,7 +260,7 @@
             Vestibulum eget turpis scelerisque, maximus neque in, ullamcorper sem. Aenean gravida,
             ante id posuere lobortis, sapien neque vulputate orci, ac gravida ipsum velit at eros. Praesent eu gravida elit.
         </p>
-        <a href="#home_section" id="map_to_home"><span></span></a>
+        <a href="#home_section" id="map_to_home" onclick="map_to_home()"><span></span></a>
         <p id="haut" style="text-align: center; margin : 0; padding: 0; display : none">
         Haut de page
         </p>
