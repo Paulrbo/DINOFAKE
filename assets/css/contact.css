@@ -1,0 +1,76 @@
+body {
+    font-family: "commmissioner", sans-serif;
+    background-color: #dfe6e9;
+}
+
+#my_nav {
+    background-color: #1DBF73;
+    margin: 0;
+    top: 0;
+}
+
+#container {
+    box-sizing: border-box;
+    display: block;
+    width: 90%;
+    margin: 25px auto;
+    padding: 10px;
+}
+
+#content {
+    text-align: center;
+}
+
+#container h1 {
+    padding-top: 2%;
+    display: block;
+    font-size: 1.6rem;
+    text-align: center;
+    margin-top: 5%;
+}
+
+
+
+#content>p {
+    font-weight: 200;
+    font-size: 1em;
+}
+
+
+    #content {
+        grid-template-columns: 1fr;
+        display: flex;
+        justify-content: space-around;
+        margin-top: 5%;
+    }
+    #container {
+        width: 100%;
+        margin: 0;
+        box-shadow: unset;
+        border-radius: 0;
+        height: 100vh;
+
+    }
+
+    .insta{
+        width: 55%;
+        height: 90%;
+    }
+
+    .gm{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .gmail{
+        width: 60%;
+        height: 100%;
+        text-align: center;
+    }
+
+    .mail{
+        font-size: 2rem;
+        font-style: bold;
+
+    }
