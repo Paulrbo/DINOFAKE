@@ -9,6 +9,28 @@
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script type="text/javascript" src="script.js"></script>
   </head>
+
+  <style>
+    #imgtourne {
+    border-radius: 100px;
+    margin-left: 0px;
+    -webkit-animation:spin 4s linear infinite;
+    -moz-animation:spin 4s linear infinite;
+    animation:spin 4s linear infinite;
+    }
+    @-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+    @-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+    @keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+  
+    #imgtourne >img:hover{
+      -webkit-transform:rotate(360deg); 
+      -moz-transform:rotate(360deg);
+      -o-transform:rotate(360deg); 
+      -ms-transform:rotate(360deg); 
+      transform:rotate(360deg);
+    }
+    </style>
+
 <body>
     <nav id="my_nav">
       <ul>
@@ -32,5 +54,15 @@
     dans le cycle préparatoire commençant par A et finissant par coeur. C'est beau de se faire des tunes sur le dos des gens quand même. </br>La société derrière ce site web est donc à 100% à but lucratif.
     Il n'y a aucun cookies sur cette page web, on les a tous mangés et on veut pas les partager. Votre vie privée est donc 100% respectée, dans la limite des stocks disponibles bien sûr.
 </p>
+</div>
+</div>
+
+
+
 </body>
+
+
+<img id="imgtourne" src="assets/img/cookie.png" alt="tourne" title="cookie"/>
+
+
 </html>

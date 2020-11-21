@@ -15,6 +15,7 @@ body {
     width: 90%;
     margin: 25px auto;
     padding: 10px;
+    margin-bottom: 15%;
 }
 
 #content {
@@ -58,4 +59,9 @@ body {
         border-radius: 0;
         height: 100vh;
     }
+}
+
+#imgtourne{
+    width: 50px;
+    height: 50px;
 }
